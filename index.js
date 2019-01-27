@@ -10,12 +10,16 @@ const mongoose = require('mongoose')
 
 const port = process.env.PORT || 3000
 const route = require('./app/routes')
+const corOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200
+}
 
 //setup mongoDb
 mongoose.connect('mongodb://localhost:27017/log_lab_bis')
 mongoose.Promise = global.Promise
 
-app.use(cors())
+app.use(cors(corOptions))
 app.use((req,res,next) => {
   req.io = io
   next()
