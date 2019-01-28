@@ -16,7 +16,7 @@ const corOptions = {
 }
 
 //setup mongoDb
-mongoose.connect('mongodb://localhost:27017/log_lab_bis')
+mongoose.connect('mongodb://admin_lab_bis:log_lab_bis123@ds145184.mlab.com:45184/log_lab_bis')
 mongoose.Promise = global.Promise
 
 app.use(cors(corOptions))
