@@ -11,7 +11,7 @@ const mongoose = require('mongoose')
 const port = process.env.PORT || 3000
 const route = require('./app/routes')
 const corOptions = {
-  origin: '*',
+  origin: 'http://18.191.228.64:3000',
   optionsSuccessStatus: 200
 }
 

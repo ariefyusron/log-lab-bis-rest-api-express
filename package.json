@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 start --watch",
-    "stop": "pm2 delete log_lab_bis"
+    "start": "nodemon index"
   },
   "author": "Arief Yusron",
   "license": "ISC",
@@ -18,7 +17,7 @@
     "express-validator": "^5.3.1",
     "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.4.6",
-    "pm2": "^3.2.9",
+    "nodemon": "^1.18.9",
     "socket.io": "^2.2.0"
   }
 }

@@ -6,6 +6,6 @@ const middleware = require('../middlewares/auth')
 
 router.get('/',middleware.checkAuth,controller.index)
 router.get('/:nim',middleware.checkAuth,controller.show)
-router.post('/',middleware.checkAuth,controller.store)
+router.post('/',controller.store)
 
 module.exports = router
